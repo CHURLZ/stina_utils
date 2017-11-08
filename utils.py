@@ -1,5 +1,4 @@
 import os
-import sys
 
 def get_env_var(var, optional=False):
     try:

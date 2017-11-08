@@ -1,14 +1,8 @@
 import functools
-import sys
-import logging
 from flask import request, jsonify
 
 missing_msg = 'Missing parameter {}'
 payload_mismatch = 'payload mismatch'
-
-log = logging.getLogger()
-log.addHandler(logging.StreamHandler(sys.stdout))
-log.setLevel(logging.INFO)
 
 def require_params(*params):
     def decorator(f):
