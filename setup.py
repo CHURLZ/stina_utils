@@ -12,7 +12,7 @@ install_reqs = parse_requirements(reqs_file, session=uuid.uuid1())
 
 setup(
     name="stina_utils",
-    version="0.1",
+    version="0.1.1",
     author="Stina Labs @ Stena IT",
     author_email="carlos@stena.io",
     description=("Support utils for Stina project"),
