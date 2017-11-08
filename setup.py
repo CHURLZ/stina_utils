@@ -21,7 +21,6 @@ setup(
     install_requires=["Flask"],
     url="https://github.com/StenaTransformations/stina_utils",
     packages=[],
-    include_package_data=True,
-    package_data={'templates': ['*'], 'data': ['*']},
+    include_package_data=False,
     long_description=read('README.md')
 )
