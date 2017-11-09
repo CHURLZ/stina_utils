@@ -9,3 +9,8 @@ def get_env_var(var, optional=False):
     except:
         print('Environment variable not found: {}'.format(var))
         raise
+
+dict_without_key = lambda d, x: {i:d[i] for i in d if i != x}
+
+def split_dict(data, key):
+    return data[key], dict_without_key(data, key)
