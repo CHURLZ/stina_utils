@@ -11,7 +11,7 @@ def setup_logging(default_path='logging.json', default_level=logging.INFO, env_k
     else:
         logging.basicConfig(level=default_level)
     global log
-    loggin.info('Logger loaded.')
+    logging.info('Logger loaded.')
 
 
 if 'log' not in globals():
